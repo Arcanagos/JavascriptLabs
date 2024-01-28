@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <script src="main.js" type="text/javascript"></script>
+    <script type="text/javascript"></script>
+  </head>
+  <body>
+    <div>
+      <h1>Wprowadź liczby</h1>
+      <div id="FieldDiv">
+        <input oninput="updateValues()">
+        <input oninput="updateValues()">
+        <input oninput="updateValues()">
+      </div>
+      <button onclick="addField()">Dodaj pole</button>
+      <button onclick="clearFields()">Wyczyść nieużywane pola</button>
+    </div>
+
+    <div>
+      <p>Suma:</p>
+      <p id="Sum">0</p>
+      <p>Średnia:</p>
+      <p id="Avr">0</p>
+      <p>Wartość Minimalna:</p>
+      <p id="MinVal">0</p>
+      <p>Wartość Maksymalna:</p>
+      <p id="MaxVal">0</p>
+    </div>
+  </body>
+</html>
