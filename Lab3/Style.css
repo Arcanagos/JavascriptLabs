@@ -1,0 +1,16 @@
+.stream {
+  border: black 3px solid;
+  padding: 5px;
+  margin: 5px;
+}
+#k1{
+  color: #DAA520;
+}
+#sounds{
+  padding 10px;
+}
+#all{
+  border: black 5px dotted;
+  padding: 5px;
+  margin: 5px;
+}

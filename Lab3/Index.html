@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Style.css">
+  </head>
+  <body>
+    <div>
+      <div id="all">
+        <div class="stream">
+          <h2 id="k1">kanał 1</h2>
+          <button onclick="playStream(1)">odtwórz</button>
+          <button onclick="switchStream(1)">zmień</button>
+          <button onclick="cleanStream(1)">wyczyść</button>
+        </div>
+        <div class="stream">
+          <h2 id="k2">kanał 2</h2>
+          <button onclick="playStream(2)">odtwórz</button>
+          <button onclick="switchStream(2)">zmień</button>
+          <button onclick="cleanStream(2)">wyczyść</button>
+        </div>
+        <div class="stream">
+          <h2 id="k3">kanał 3</h2>
+          <button onclick="playStream(3)">odtwórz</button>
+          <button onclick="switchStream(3)">zmień</button>
+          <button onclick="cleanStream(3)">wyczyść</button>
+        </div>
+        <div class="stream">
+          <h2 id="k4">kanał 4</h2>
+          <button onclick="playStream(4)">odtwórz</button>
+          <button onclick="switchStream(4)">zmień</button>
+          <button onclick="cleanStream(4)">wyczyść</button>
+        </div>
+        <button onclick="playAll()">odtwórz wszystkie</button>
+        <button onclick="cleanAll()">wyczyść wszystkie</button>
+      </div>
+      <div id="sounds">
+        <div>
+          a => clap
+          <audio src="./sounds/clap.wav" controls id="s1"></audio>
+          s => hihat
+          <audio src="./sounds/hihat.wav" controls id="s2"></audio>
+          d => boom
+          <audio src="./sounds/boom.wav" controls id="s3"></audio>
+        </div>
+        <div>
+          f => kick
+          <audio src="./sounds/kick.wav" controls id="s4"></audio>
+          g => openhat
+          <audio src="./sounds/openhat.wav" controls id="s5"></audio>
+          h => ride
+          <audio src="./sounds/ride.wav" controls id="s6"></audio>
+        </div>
+        <div>
+          j => snare
+          <audio src="./sounds/snare.wav" controls id="s7"></audio>
+          k => tink
+          <audio src="./sounds/tink.wav" controls id="s8"></audio>
+          l => tom
+          <audio src="./sounds/tom.wav" controls id="s9"></audio>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="Main.js" type="text/javascript"></script>
+</html>
