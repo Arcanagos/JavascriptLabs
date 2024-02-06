@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Style.css">
+  </head>
+  <body>
+    <div>
+      <div id="allNotes">
+
+    </div>
+    <div>
+      <h1>Notatnik</h1>
+      <button onclick="addNote()">Dodaj notatkę</button>
+    </div>
+    <div id="mainNote" class="note" style="visibility: hidden;">
+
+      <button class="del" onclick="deleteNote(this)">x</button>
+
+      <label>Tytuł:</label>
+      <input type="text" id="noteTitle" onkeyup="updateTextData(this)">
+
+      <label>Treść:</label>
+      <textarea id="noteContent" onkeyup="updateTextData(this)"></textarea>
+
+      <label>Kolor:</label>
+      <div id="colorPick">
+          <div class="colorOption" onclick="selectColor(this,'gold')" style="background-color: gold"></div>
+          <div class="colorOption" onclick="selectColor(this,'olive')" style="background-color: olive"></div>
+          <div class="colorOption" onclick="selectColor(this,'teal')" style="background-color: teal"></div>
+          <div class="colorOption" onclick="selectColor(this,'white')" style="background-color: white"></div>
+      </div>
+
+      <div class="data">
+      </div>
+
+      Przypnij na początku:
+      <input onchange="moveToTop(this)" type="checkbox" id="pinCheckbox">
+    </div>
+    <script src="Main.js" type="text/javascript"></script>
+  </body>
+</html>
